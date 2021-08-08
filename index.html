@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+     <title>Mumbai Darshan</title>
+     <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+     <section class="showcase">
+          <header>
+               <h2 class="logo">Mumbai</h2>
+               <div class="toggle "></div>
+          </header> 
+          <video src="image/pexels-ronald-menezes-5464304.mp4" muted loop autoplay></video>
+          <div class="overlay"></div>
+          <div class="text">
+               <h2>Never Stop</h2>
+               <h3>Explore the Mumbai</h3>
+               <p>Mumbai is like a giant piece of soul.Every time a new person comes to Mumbai and attach oneself to this city regardless of wherever you go after that,it travels with you,enriching you.</p>
+               <a href="#">Explore</a>
+          </div>
+     
+          <ul class="social">
+            <li><a href="#"> <img src = "image/telegram.jpg" alt=""></a></li>
+            <li><a href="#"><img  src="image/logo-instagram.png" alt=""></a></li>
+          </ul>
+          
+          
+     </section>
+     <div class="menu">
+     <h5>
+      <ul>
+        <li> <a href="#">home</a> </li>
+        <li> <a href="#">news</a> </li>
+        <li> <a href="#">notifications</a> </li>
+        <li> <a href="#">contact</a> </li>
+
+      </ul>
+    </h5>
+    </div>
+    <script>
+          const menuToggle = document.querySelector('.toggle')
+          const showcase = document.querySelector('.showcase')
+
+          menuToggle.addEventListener('click' , ()=> {
+               menuToggle.classList.toggle('active')
+               showcase.classList.toggle('active')
+          })
+     </script>
+</body>
+</html>
